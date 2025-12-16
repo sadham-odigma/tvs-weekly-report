@@ -1,0 +1,21 @@
+# Maven
+target/
+
+# TestNG Reports
+test-output/
+
+# Logs & Reports
+Reports/
+logs/
+
+# IDE
+.classpath
+.project
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Compiled files
+*.class
