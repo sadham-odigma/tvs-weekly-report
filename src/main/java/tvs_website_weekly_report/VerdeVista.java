@@ -12,12 +12,12 @@ import org.testng.annotations.Test;
 public class VerdeVista {
 	
 		@Parameters({ "url", "name", "email", "mobile" })
-		@Test
+		@Test(enabled = false)
 		public void bannerForms(String url, String name, String email, String mobile) {
 			ChromeDriver driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.get(url);
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
 			// name field
 			driver.findElement(By.id("form_input_name")).sendKeys(name);

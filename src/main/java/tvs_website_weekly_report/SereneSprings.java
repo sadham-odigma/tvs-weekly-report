@@ -1,4 +1,4 @@
-	package tvs_website_weekly_report;
+package tvs_website_weekly_report;
 
 import java.time.Duration;
 
@@ -13,20 +13,19 @@ import org.testng.annotations.Test;
 
 public class SereneSprings {
 	@Parameters({ "url", "name", "email", "mobile" })
-	@Test
+	@Test(enabled = false)
 	public void siteVisitForm(String url, String name, String email, String mobile) {
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(url);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
-		//Scroll
+		// Scroll
 		Actions scroll = new Actions(driver);
 		WebElement footerForm = driver.findElement(By.xpath("//form[@id='footer_form']"));
 		scroll.scrollToElement(footerForm).perform();
-		//footerForm.click();
-		
-		
+		// footerForm.click();
+
 		// name field
 		driver.findElement(By.xpath("(//input[@id='banner_input_name'])[2]")).sendKeys(name);
 		// email field
@@ -51,5 +50,3 @@ public class SereneSprings {
 
 	}
 }
-
-

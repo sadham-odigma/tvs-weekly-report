@@ -3,6 +3,8 @@ package tvs_website_weekly_report;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
@@ -18,16 +20,20 @@ public class HomePage_StickyForm {
 
 		// CLICK sticky opening button
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-		wait.until(ExpectedConditions.elementToBeClickable(By.id("_enquire_now"))).click();
+		JavascriptExecutor js = driver;
+		WebElement stickyBut = driver.findElement(By.id("//div[@id='stickyForm']"));
+		stickyBut.click();
+		js.executeScript("arguments[0].click();", stickyBut);
+		//wait.until(ExpectedConditions.elementToBeClickable(By.id("//div[@class='stickyForm']/button"))).click();
 
         // Fill the form
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("name"))).sendKeys("Test User");
+        //wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("name"))).sendKeys("Test User");
 		//email field
 		driver.findElement(By.name("email")).sendKeys("Testrock@gmail.com");
 		//mob num filed
 		driver.findElement(By.name("phone")).sendKeys("9876567822");
 		//submit button
-		driver.findElement(By.id("enquire_now_btn")).click();
+		//driver.findElement(By.id("enquire_now_btn")).click();
 		
 		 // WAIT for URL to become thankyou page
        

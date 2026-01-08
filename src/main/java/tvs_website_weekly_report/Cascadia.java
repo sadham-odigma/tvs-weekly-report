@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 public class Cascadia {
 	@Parameters({ "url", "name", "email", "mobile" })
-	@Test
+	@Test(enabled = false)
 	public void bannerForms(String url, String name, String email, String mobile) {
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();

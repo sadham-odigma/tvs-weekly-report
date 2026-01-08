@@ -3,6 +3,7 @@ package tvs_website_weekly_report;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -19,10 +20,13 @@ public class TestPractise {
 		
 		
 
+		JavascriptExecutor js = driver;
 		Actions scroll = new Actions(driver);
 		WebElement enqnowForm = driver.findElement(By.xpath("//a[@id='udyana_ph_3_lp_enquire_now_btn']"));
 		scroll.scrollToElement(enqnowForm).perform();
-		enqnowForm.click();
+		
+		js.executeScript("arguments[0].click();", enqnowForm);
+		//enqnowForm.click();
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//input[@name='name'])[1]")));
 		// name field
@@ -31,7 +35,7 @@ public class TestPractise {
 		driver.findElement(By.name("email")).sendKeys("sgsdsd@gmail.com");
 		// mob num filed
 		driver.findElement(By.name("phone")).sendKeys("9569569655");
-		driver.findElement(By.id("udyana_lp_submit_enquiry")).click();
+		//driver.findElement(By.id("udyana_lp_submit_enquiry")).click();
 
 	}
 

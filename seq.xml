@@ -7,9 +7,9 @@
 
 	<!-- COMMON PARAMETERS -->
 
-	<parameter name="name" value="Test traguap" />
-	<parameter name="email" value="tragusy@gmail.com" />
-	<parameter name="mobile" value="6535655620" />
+	<parameter name="name" value="Test vweeran" />
+	<parameter name="email" value="tesrveqeran@gmail.com" />
+	<parameter name="mobile" value="9004562321" />
 
 	<test name="Sequential Execution">
 
@@ -17,7 +17,7 @@
 
 
 			<!-- Class 1 with URL ProjectPage -->
-			<class name="tvs_website_weekly_report.ProjectPage">
+			<class name="tvs_website_weekly_report.ProjectPage" >
 				<parameter name="url"
 					value="https://www.tvsemerald.com/projects/tvs-emerald-auralis/" />
 			</class>

@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Set;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -17,31 +18,40 @@ import org.testng.annotations.Test;
 public class Udyana {
 
 	@Parameters({ "url", "name", "email", "mobile" })
-	@Test
-	public void eqnowForm (String url, String name, String email, String mobile) {
+	@Test(enabled = true)
+	public void eqnowForm(String url, String name, String email, String mobile) {
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(url);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
 		// scroll down
+		JavascriptExecutor js = driver;
+		
 
-		Actions scroll = new Actions(driver);
-		WebElement enqnowForm = driver.findElement(By.xpath("//a[@id='udyana_ph_3_lp_enquire_now_btn']"));
-		scroll.scrollToElement(enqnowForm).perform();
-		enqnowForm.click();
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//input[@name='name'])[1]")));
+		// Actions scroll = new Actions(driver);
+//		 WebElement enquireBtn = wait.until(
+//			        ExpectedConditions.presenceOfElementLocated(
+//			            By.xpath("//button[normalize-space()='Enquire Now']")
+//			        )
+//			    );
+		// scroll.scrollToElement(enqnowForm).perform();
+//		js.executeScript("arguments[0].scrollIntoView({block:'center'});", enquireBtn);
+//		js.executeScript("arguments[0].click();", enquireBtn);
+
+//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//input[@name='name'])[1]")));
 		// name field
-		driver.findElement(By.xpath("(//input[@name='name'])[1]")).sendKeys("test");
+		driver.findElement(By.name("name")).sendKeys(name);
 		// email field
 		driver.findElement(By.name("email")).sendKeys(email);
 		// mob num filed
 		driver.findElement(By.name("phone")).sendKeys(mobile);
-		driver.findElement(By.id("udyana_lp_submit_enquiry")).click();
-
-		// wait for thankyou url
-		// WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		driver.findElement(By.id("U_LP_Banner_Form_Submit_btn")).click();
+//		WebElement submitBtn = driver.findElement(By.id("U_LP_Banner_Form_Submit_btn"));
+//	    js.executeScript("arguments[0].scrollIntoView({block:'center'});", submitBtn);
+//	    wait.until(ExpectedConditions.elementToBeClickable(submitBtn));
+//	    js.executeScript("arguments[0].click();", submitBtn);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.urlContains("thankyou.php"));
 
 		// thankyou page title

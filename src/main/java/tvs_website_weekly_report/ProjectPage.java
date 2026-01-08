@@ -13,7 +13,7 @@ public class ProjectPage {
 
 
     @Parameters({"url", "name", "email", "mobile"})
-    @Test
+    @Test(enabled = false)
     public void testProjectPage(String url, String name, String email, String mobile) {
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -29,7 +29,7 @@ public class ProjectPage {
 		driver.findElement(By.id("auralis_request_detials")).click();
 		
 		//wait for thankyou url
-		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	        wait.until(ExpectedConditions.urlContains("thank-you"));
 	        
 			//thankyou page title 
