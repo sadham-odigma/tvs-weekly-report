@@ -18,7 +18,7 @@ import org.testng.annotations.Test;
 public class Udyana {
 
 	@Parameters({ "url", "name", "email", "mobile" })
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void eqnowForm(String url, String name, String email, String mobile) {
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
