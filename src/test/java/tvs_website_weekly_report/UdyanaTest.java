@@ -35,6 +35,7 @@ public class UdyanaTest {
 //			            By.xpath("//button[normalize-space()='Enquire Now']")
 //			        )
 //			    );
+
 		// scroll.scrollToElement(enqnowForm).perform();
 //		js.executeScript("arguments[0].scrollIntoView({block:'center'});", enquireBtn);
 //		js.executeScript("arguments[0].click();", enquireBtn);

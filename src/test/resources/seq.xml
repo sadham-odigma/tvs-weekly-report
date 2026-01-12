@@ -3,7 +3,8 @@
 <suite name="TVS Website Suite"
 	verbose="2"
 	thread-count="2"
-	parallel="false">
+	parallel="false"
+	configfailurepolicy="continue">
 
 	<!-- COMMON PARAMETERS -->
 
