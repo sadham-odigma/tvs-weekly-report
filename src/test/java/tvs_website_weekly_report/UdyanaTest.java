@@ -15,7 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class Udyana {
+public class UdyanaTest {
 
 	@Parameters({ "url", "name", "email", "mobile" })
 	@Test(enabled = false)

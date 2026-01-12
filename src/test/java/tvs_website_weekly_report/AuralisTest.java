@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class Auralis {
+public class AuralisTest {
 	@Parameters({ "url", "name", "email", "mobile" })
 	@Test(enabled = false)
 	public void bannerForm(String url, String name, String email, String mobile) {

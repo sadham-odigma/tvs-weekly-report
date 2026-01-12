@@ -17,51 +17,51 @@
 
 
 			<!-- Class 1 with URL ProjectPage -->
-			<class name="tvs_website_weekly_report.ProjectPage" >
+			<class name="tvs_website_weekly_report.ProjectPageTest" >
 				<parameter name="url"
 					value="https://www.tvsemerald.com/projects/tvs-emerald-auralis/" />
 			</class>
 
 			<!-- Class 2 with Contact us Page -->
-			<class name="tvs_website_weekly_report.ContactUsPage">
+			<class name="tvs_website_weekly_report.ContactUsPageTest">
 				<parameter name="url"
 					value="https://www.tvsemerald.com/contact-us/?p_s=Tester_Digital&amp;se_s=Tester_Google&amp;t_s=Tester_Google%20Search&amp;ADCampaignID=21154353295&amp;AdSetID=160172621163&amp;AdID=695410883401&amp;AdPosition=&amp;matchtype=b&amp;gad_source=1&amp;gclid=Cj0KCQjwmt24BhDPARIsAJFYKk3Je-L7NQtA5f1i5vsgSqgT9-0Fi4TPWUQ8qoxKWmXnrQVkfOg6MlsaAttSEALw_wcB&amp;utm_source=Tester_newslettertesting&amp;utm_medium=Tester_socialtesting&amp;utm_campaign=saletesting&amp;utm_content=Tester_buy-nowbtntesting&amp;utm_term=Tester_testing&amp;srd=667aaeb22f31c68f1dcec8a3" />
 			</class>
 
 			<!-- Class 3 with Udyana -->
-			<class name="tvs_website_weekly_report.Udyana">
+			<class name="tvs_website_weekly_report.UdyanaTest">
 				<parameter name="url"
 					value="https://www.tvsemerald.com/lp/tvs-emerald-udyana-phase-3/?p_s=Tester_Digital&amp;se_s=Tester_Google&amp;t_s=Tester_Google%20Search&amp;ADCampaignID=21154353295&amp;AdSetID=160172621163&amp;AdID=695410883401&amp;AdPosition=&amp;matchtype=b&amp;gad_source=1&amp;gclid=Cj0KCQjwmt24BhDPARIsAJFYKk3Je-L7NQtA5f1i5vsgSqgT9-0Fi4TPWUQ8qoxKWmXnrQVkfOg6MlsaAttSEALw_wcB&amp;utm_source=Tester_newslettertesting&amp;utm_medium=Tester_socialtesting&amp;utm_campaign=saletesting&amp;utm_content=Tester_buy-nowbtntesting&amp;utm_term=Tester_testing&amp;srd=667aaeb22f31c68f1dcec8a3" />
 			</class>
 
-			<!-- Class 4 with Luxor -->
-			<class name="tvs_website_weekly_report.Luxor">
+			<!-- Class 4 with LuxorTest -->
+			<class name="tvs_website_weekly_report.LuxorTest">
 				<parameter name="url"
 					value="https://www.tvsemerald.com/lp/tvs-emerald-luxor/?p_s=Tester_Digital&amp;se_s=Tester_Google&amp;t_s=Tester_Google%20Search&amp;ADCampaignID=21154353295&amp;AdSetID=160172621163&amp;AdID=695410883401&amp;AdPosition=&amp;matchtype=b&amp;gad_source=1&amp;gclid=Cj0KCQjwmt24BhDPARIsAJFYKk3Je-L7NQtA5f1i5vsgSqgT9-0Fi4TPWUQ8qoxKWmXnrQVkfOg6MlsaAttSEALw_wcB&amp;utm_source=Tester_newslettertesting&amp;utm_medium=Tester_socialtesting&amp;utm_campaign=saletesting&amp;utm_content=Tester_buy-nowbtntesting&amp;utm_term=Tester_testing&amp;srd=667aaeb22f31c68f1dcec8a3" />
 			</class>
 
 			<!-- Class 5 with Luxor AnnaNagar -->
-			<class name="tvs_website_weekly_report.Luxor_AnnaNagar">
+			<class name="tvs_website_weekly_report.LuxorAnnaNagarTest">
 				<parameter name="url"
 					value="https://www.tvsemerald.com/lp/tvs-emerald-luxor/anna-nagar/?p_s=Tester_Digital&amp;se_s=Tester_Google&amp;t_s=Tester_Google%20Search&amp;ADCampaignID=21154353295&amp;AdSetID=160172621163&amp;AdID=695410883401&amp;AdPosition=&amp;matchtype=b&amp;gad_source=1&amp;gclid=Cj0KCQjwmt24BhDPARIsAJFYKk3Je-L7NQtA5f1i5vsgSqgT9-0Fi4TPWUQ8qoxKWmXnrQVkfOg6MlsaAttSEALw_wcB&amp;utm_source=Tester_newslettertesting&amp;utm_medium=Tester_socialtesting&amp;utm_campaign=saletesting&amp;utm_content=Tester_buy-nowbtntesting&amp;utm_term=Tester_testing&amp;srd=667aaeb22f31c68f1dcec8a3" />
 			</class>
 			<!-- Class 6 with Cascadia -->
-			<class name="tvs_website_weekly_report.Cascadia">
+			<class name="tvs_website_weekly_report.CascadiaTest">
 				<parameter name="url"
 					value="https://www.tvsemerald.com/lp/tvs-emerald-cascadia/?p_s=Tester_Digital&amp;se_s=Tester_Google&amp;t_s=Tester_Google%20Search&amp;ADCampaignID=21154353295&amp;AdSetID=160172621163&amp;AdID=695410883401&amp;AdPosition=&amp;matchtype=b&amp;gad_source=1&amp;gclid=Cj0KCQjwmt24BhDPARIsAJFYKk3Je-L7NQtA5f1i5vsgSqgT9-0Fi4TPWUQ8qoxKWmXnrQVkfOg6MlsaAttSEALw_wcB&amp;utm_source=Tester_newslettertesting&amp;utm_medium=Tester_socialtesting&amp;utm_campaign=saletesting&amp;utm_content=Tester_buy-nowbtntesting&amp;utm_term=Tester_testing&amp;srd=667aaeb22f31c68f1dcec8a3" />
 			</class>
 			<!-- Class 7 with SereneSprings -->
-			<class name="tvs_website_weekly_report.SereneSprings">
+			<class name="tvs_website_weekly_report.SereneSpringsTest">
 				<parameter name="url"
 					value="https://www.tvsemerald.com/lp/tvs-emerald-serene-springs/?p_s=Tester_Digital&amp;se_s=Tester_Google&amp;t_s=Tester_Google%20Search&amp;ADCampaignID=21154353295&amp;AdSetID=160172621163&amp;AdID=695410883401&amp;AdPosition=&amp;matchtype=b&amp;gad_source=1&amp;gclid=Cj0KCQjwmt24BhDPARIsAJFYKk3Je-L7NQtA5f1i5vsgSqgT9-0Fi4TPWUQ8qoxKWmXnrQVkfOg6MlsaAttSEALw_wcB&amp;utm_source=Tester_newslettertesting&amp;utm_medium=Tester_socialtesting&amp;utm_campaign=saletesting&amp;utm_content=Tester_buy-nowbtntesting&amp;utm_term=Tester_testing&amp;srd=667aaeb22f31c68f1dcec8a3" />
 			</class>
-			<!-- Class 8 with VerdeVista -->
-			<class name="tvs_website_weekly_report.VerdeVista">
+			<!-- Class 8 with VerdeVistaTest -->
+			<class name="tvs_website_weekly_report.VerdeVistaTest">
 				<parameter name="url"
 					value="https://www.tvsemerald.com/lp/tvs-emerald-verde-vista/?p_s=Tester_Digital&amp;se_s=Tester_Google&amp;t_s=Tester_Google%20Search&amp;ADCampaignID=21154353295&amp;AdSetID=160172621163&amp;AdID=695410883401&amp;AdPosition=&amp;matchtype=b&amp;gad_source=1&amp;gclid=Cj0KCQjwmt24BhDPARIsAJFYKk3Je-L7NQtA5f1i5vsgSqgT9-0Fi4TPWUQ8qoxKWmXnrQVkfOg6MlsaAttSEALw_wcB&amp;utm_source=Tester_newslettertesting&amp;utm_medium=Tester_socialtesting&amp;utm_campaign=saletesting&amp;utm_content=Tester_buy-nowbtntesting&amp;utm_term=Tester_testing&amp;srd=667aaeb22f31c68f1dcec8a3" />
 			</class>
-			<!-- Class 9 with Auralis -->
-			<class name="tvs_website_weekly_report.Auralis">
+			<!-- Class 9 with AuralisTest -->
+			<class name="tvs_website_weekly_report.AuralisTest">
 				<parameter name="url"
 					value="https://www.tvsemerald.com/lp/tvs-emerald-auralis/?p_s=Tester_Digital&amp;se_s=Tester_Google&amp;t_s=Tester_Google%20Search&amp;ADCampaignID=21154353295&amp;AdSetID=160172621163&amp;AdID=695410883401&amp;AdPosition=&amp;matchtype=b&amp;gad_source=1&amp;gclid=Cj0KCQjwmt24BhDPARIsAJFYKk3Je-L7NQtA5f1i5vsgSqgT9-0Fi4TPWUQ8qoxKWmXnrQVkfOg6MlsaAttSEALw_wcB&amp;utm_source=Tester_newslettertesting&amp;utm_medium=Tester_socialtesting&amp;utm_campaign=saletesting&amp;utm_content=Tester_buy-nowbtntesting&amp;utm_term=Tester_testing&amp;srd=667aaeb22f31c68f1dcec8a3" />
 			</class>

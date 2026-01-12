@@ -9,12 +9,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class ProjectPage {
-
-
-    @Parameters({"url", "name", "email", "mobile"})
-    @Test(enabled = false)
-    public void testProjectPage(String url, String name, String email, String mobile) {
+public class CascadiaTest {
+	@Parameters({ "url", "name", "email", "mobile" })
+	@Test(enabled = false)
+	public void bannerForms(String url, String name, String email, String mobile) {
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(url);
@@ -26,22 +24,21 @@ public class ProjectPage {
 		driver.findElement(By.name("email")).sendKeys(email);
 		// mob num filed
 		driver.findElement(By.name("phone")).sendKeys(mobile);
-		driver.findElement(By.id("auralis_request_detials")).click();
-		
-		//wait for thankyou url
-		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-	        wait.until(ExpectedConditions.urlContains("thank-you"));
-	        
-			//thankyou page title 
-			String title = driver.getTitle();
-			if (title.contains("Thank you")) {
-				System.out.println("Form Submitted Sucessfully");
-				
-			}
-			else {
-				System.out.println("Form Submission Failed");
-			}
-			driver.close();
-	}
+		driver.findElement(By.id("tvs_cascadia_banner_bottom_form_submit")).click();
 
+		// wait for thankyou url
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		wait.until(ExpectedConditions.urlContains("thankyou.php"));
+
+		// thankyou page title
+		String title = driver.getTitle();
+		if (title.contains("Thank You")) {
+			System.out.println("Form Submitted Sucessfully");
+
+		} else {
+			System.out.println("Form Submission Failed");
+		}
+		driver.close();
+
+	}
 }
