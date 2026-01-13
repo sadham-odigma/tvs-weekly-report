@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 
 public class SereneSpringsTest {
 	@Parameters({ "url", "name", "email", "mobile" })
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void siteVisitForm(String url, String name, String email, String mobile) {
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();

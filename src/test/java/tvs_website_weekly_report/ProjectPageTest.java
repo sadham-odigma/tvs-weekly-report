@@ -13,7 +13,7 @@ public class ProjectPageTest {
 
 
     @Parameters({"url", "name", "email", "mobile"})
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void testProjectPage(String url, String name, String email, String mobile) {
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
