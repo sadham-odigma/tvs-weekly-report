@@ -18,7 +18,7 @@ import org.testng.annotations.Test;
 public class UdyanaTest {
 
 	@Parameters({ "url", "name", "email", "mobile" })
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void eqnowForm(String url, String name, String email, String mobile) {
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -39,15 +39,17 @@ public class UdyanaTest {
 		// scroll.scrollToElement(enqnowForm).perform();
 //		js.executeScript("arguments[0].scrollIntoView({block:'center'});", enquireBtn);
 //		js.executeScript("arguments[0].click();", enquireBtn);
+		WebElement footerForm = driver.findElement(By.xpath("//form[@id='footerForm']"));
+		js.executeScript("arguments[0].scrollIntoView({block:'center'});", footerForm);
 
 //		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//input[@name='name'])[1]")));
 		// name field
-		driver.findElement(By.name("name")).sendKeys(name);
+		driver.findElement(By.xpath("(//input[@name='name'])[4]")).sendKeys(name);
 		// email field
-		driver.findElement(By.name("email")).sendKeys(email);
+		driver.findElement(By.xpath("(//input[@name='email'])[4]")).sendKeys(email);
 		// mob num filed
-		driver.findElement(By.name("phone")).sendKeys(mobile);
-		driver.findElement(By.id("U_LP_Banner_Form_Submit_btn")).click();
+		driver.findElement(By.xpath("(//input[@name='phone'])[4]")).sendKeys(mobile);
+		driver.findElement(By.xpath("(//input[@id='U_LP_Footer_form_submit'])[2]")).click();
 //		WebElement submitBtn = driver.findElement(By.id("U_LP_Banner_Form_Submit_btn"));
 //	    js.executeScript("arguments[0].scrollIntoView({block:'center'});", submitBtn);
 //	    wait.until(ExpectedConditions.elementToBeClickable(submitBtn));

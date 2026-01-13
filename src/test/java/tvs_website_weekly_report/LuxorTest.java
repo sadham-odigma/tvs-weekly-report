@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 public class LuxorTest {
 	@Parameters({ "url", "name", "email", "mobile" })
-	@Test(enabled = true)
+	@Test(enabled = false)
 	public void bannerForm (String url, String name, String email, String mobile) {
 		ChromeDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
