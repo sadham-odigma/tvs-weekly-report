@@ -8,9 +8,9 @@
 
 	<!-- COMMON PARAMETERS -->
 
-	<parameter name="name" value="Test Kani" />
-	<parameter name="email" value="terkani@gmail.com" />
-	<parameter name="mobile" value="9067678721" />
+	<parameter name="name" value="Test Claude" />
+	<parameter name="email" value="testclaude@gmail.com" />
+	<parameter name="mobile" value="Test 9876543210" />
 
 	<test name="Sequential Execution">
 

@@ -25,7 +25,7 @@ public class VerdeVistaTest {
 			driver.findElement(By.id("form_input_email")).sendKeys(email);
 			// mob num filed
 			driver.findElement(By.id("form_input_phone")).sendKeys(mobile);
-			driver.findElement(By.id("tvs_vv_lp_bannerForm_submit_btn")).click();
+			driver.findElement(By.className("form_submit_btn")).click();
 
 			// wait for thankyou url
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
