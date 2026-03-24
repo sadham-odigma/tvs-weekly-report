@@ -18,6 +18,7 @@ public class ContactUsPageTest {
     @Test(enabled = true)
     public void testContactUs(String url, String name, String email, String mobile) {
 		ChromeDriver driver = new ChromeDriver();
+		DriverHolder.setDriver(driver);
 		driver.manage().window().maximize();
 		driver.get(url);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));

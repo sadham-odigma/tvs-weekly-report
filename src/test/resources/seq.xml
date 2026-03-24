@@ -6,11 +6,16 @@
 	parallel="false"
 	configfailurepolicy="continue">
 
+	<!-- EXTENT REPORT LISTENER -->
+	<listeners>
+		<listener class-name="tvs_website_weekly_report.ExtentReportListener" />
+	</listeners>
+
 	<!-- COMMON PARAMETERS -->
 
 	<parameter name="name" value="Test Claude" />
 	<parameter name="email" value="testclaude@gmail.com" />
-	<parameter name="mobile" value="Test 9876543210" />
+	<parameter name="mobile" value="9876543210" />
 
 	<test name="Sequential Execution">
 
@@ -66,7 +71,11 @@
 				<parameter name="url"
 					value="https://www.tvsemerald.com/lp/tvs-emerald-auralis/?p_s=Tester_Digital&amp;se_s=Tester_Google&amp;t_s=Tester_Google%20Search&amp;ADCampaignID=21154353295&amp;AdSetID=160172621163&amp;AdID=695410883401&amp;AdPosition=&amp;matchtype=b&amp;gad_source=1&amp;gclid=Cj0KCQjwmt24BhDPARIsAJFYKk3Je-L7NQtA5f1i5vsgSqgT9-0Fi4TPWUQ8qoxKWmXnrQVkfOg6MlsaAttSEALw_wcB&amp;utm_source=Tester_newslettertesting&amp;utm_medium=Tester_socialtesting&amp;utm_campaign=saletesting&amp;utm_content=Tester_buy-nowbtntesting&amp;utm_term=Tester_testing&amp;srd=667aaeb22f31c68f1dcec8a3" />
 			</class>
-
+			<!-- Class 10 with HomePage Sticky Form -->
+			<class name="tvs_website_weekly_report.HomePageStickyFormTest">
+				<parameter name="url"
+					value="https://www.tvsemerald.com/?p_s=Tester_Digital&amp;se_s=Tester_Google&amp;t_s=Tester_Google%20Search&amp;ADCampaignID=21154353295&amp;AdSetID=160172621163&amp;AdID=695410883401&amp;AdPosition=&amp;matchtype=b&amp;gad_source=1&amp;gclid=Cj0KCQjwmt24BhDPARIsAJFYKk3Je-L7NQtA5f1i5vsgSqgT9-0Fi4TPWUQ8qoxKWmXnrQVkfOg6MlsaAttSEALw_wcB&amp;utm_source=Tester_newslettertesting&amp;utm_medium=Tester_socialtesting&amp;utm_campaign=saletesting&amp;utm_content=Tester_buy-nowbtntesting&amp;utm_term=Tester_testing&amp;srd=667aaeb22f31c68f1dcec8a3" />
+			</class>
 
 		</classes>
 

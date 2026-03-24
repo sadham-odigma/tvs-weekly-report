@@ -16,6 +16,7 @@ public class SereneSpringsTest {
 	@Test(enabled = true)
 	public void siteVisitForm(String url, String name, String email, String mobile) {
 		ChromeDriver driver = new ChromeDriver();
+		DriverHolder.setDriver(driver);
 		driver.manage().window().maximize();
 		driver.get(url);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
