@@ -13,9 +13,9 @@
 
 	<!-- COMMON PARAMETERS -->
 
-	<parameter name="name" value="Test Claude" />
-	<parameter name="email" value="testclaude@gmail.com" />
-	<parameter name="mobile" value="9876543210" />
+	<parameter name="name" value="Malma" />
+	<parameter name="email" value="testmalma@gmail.com" />
+	<parameter name="mobile" value="9876543211" />
 
 	<test name="Sequential Execution">
 

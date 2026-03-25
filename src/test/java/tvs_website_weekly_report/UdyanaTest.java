@@ -50,7 +50,8 @@ public class UdyanaTest {
 		driver.findElement(By.xpath("(//input[@name='email'])[4]")).sendKeys(email);
 		// mob num filed
 		driver.findElement(By.xpath("(//input[@name='phone'])[4]")).sendKeys(mobile);
-		driver.findElement(By.xpath("(//input[@id='U_LP_Footer_form_submit'])[2]")).click();
+		WebElement submitBtn = driver.findElement(By.xpath("(//input[@id='U_LP_Footer_form_submit'])[2]"));
+		js.executeScript("arguments[0].click();", submitBtn);
 //		WebElement submitBtn = driver.findElement(By.id("U_LP_Banner_Form_Submit_btn"));
 //	    js.executeScript("arguments[0].scrollIntoView({block:'center'});", submitBtn);
 //	    wait.until(ExpectedConditions.elementToBeClickable(submitBtn));
