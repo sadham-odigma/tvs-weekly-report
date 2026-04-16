@@ -3,6 +3,8 @@ package tvs_website_weekly_report;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -25,7 +27,9 @@ public class CascadiaTest {
 		driver.findElement(By.name("email")).sendKeys(email);
 		// mob num filed
 		driver.findElement(By.name("phone")).sendKeys(mobile);
-		driver.findElement(By.id("tvs_cascadia_banner_bottom_form_submit")).click();
+		JavascriptExecutor js = driver;
+		WebElement submitBtn = driver.findElement(By.id("tvs_cascadia_banner_bottom_form_submit"));
+		js.executeScript("arguments[0].click();", submitBtn);
 
 		// wait for thankyou url
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));

@@ -40,22 +40,17 @@ public class UdyanaTest {
 		// scroll.scrollToElement(enqnowForm).perform();
 //		js.executeScript("arguments[0].scrollIntoView({block:'center'});", enquireBtn);
 //		js.executeScript("arguments[0].click();", enquireBtn);
-		WebElement footerForm = driver.findElement(By.xpath("//form[@id='footerForm']"));
-		js.executeScript("arguments[0].scrollIntoView({block:'center'});", footerForm);
+		WebElement bannerForm = driver.findElement(By.xpath("//form[@id='bannerForm']"));
+		js.executeScript("arguments[0].scrollIntoView({block:'center'});", bannerForm);
 
-//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//input[@name='name'])[1]")));
 		// name field
-		driver.findElement(By.xpath("(//input[@name='name'])[4]")).sendKeys(name);
+		driver.findElement(By.xpath("//form[@id='bannerForm']//input[@name='name']")).sendKeys(name);
 		// email field
-		driver.findElement(By.xpath("(//input[@name='email'])[4]")).sendKeys(email);
+		driver.findElement(By.xpath("//form[@id='bannerForm']//input[@name='email']")).sendKeys(email);
 		// mob num filed
-		driver.findElement(By.xpath("(//input[@name='phone'])[4]")).sendKeys(mobile);
-		WebElement submitBtn = driver.findElement(By.xpath("(//input[@id='U_LP_Footer_form_submit'])[2]"));
+		driver.findElement(By.xpath("//form[@id='bannerForm']//input[@name='phone']")).sendKeys(mobile);
+		WebElement submitBtn = driver.findElement(By.id("U_LP_Banner_Form_Submit_btn"));
 		js.executeScript("arguments[0].click();", submitBtn);
-//		WebElement submitBtn = driver.findElement(By.id("U_LP_Banner_Form_Submit_btn"));
-//	    js.executeScript("arguments[0].scrollIntoView({block:'center'});", submitBtn);
-//	    wait.until(ExpectedConditions.elementToBeClickable(submitBtn));
-//	    js.executeScript("arguments[0].click();", submitBtn);
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.urlContains("thankyou.php"));
 

@@ -3,6 +3,8 @@ package tvs_website_weekly_report;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -20,12 +22,14 @@ public class LuxorAnnaNagarTest {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 	
 		// name field
-				driver.findElement(By.name("name")).sendKeys(name);
+				driver.findElement(By.id("name")).sendKeys(name);
 				// email field
-				driver.findElement(By.name("email")).sendKeys(email);
+				driver.findElement(By.id("email")).sendKeys(email);
 				// mob num filed
-				driver.findElement(By.name("phone")).sendKeys(mobile);
-				driver.findElement(By.id("banner_form_submit_luxor")).click();
+				driver.findElement(By.id("phone")).sendKeys(mobile);
+				JavascriptExecutor js = driver;
+				WebElement submitBtn = driver.findElement(By.id("banner_form_submit_luxor"));
+				js.executeScript("arguments[0].click();", submitBtn);
 
 				// wait for thankyou url
 				WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
